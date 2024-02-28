@@ -1,17 +1,11 @@
 import React from 'react';
 import '../App.css';
+import HeaderBar from '../components/HeaderBar';
 
 function JobDetail() {
   return (
     <div className={'body'}>
-      <div className={'header-bar drop-shadow-lg px-8 py-2 flex justify-between'}>
-        <div className={''}>
-          <div className={'font-bold text-2xl leading-7 pt-2'}>FLOC</div>
-        </div>
-        <div className={'login-button font-normal text-lg leading-6 border rounded-full'}>
-          <button className={'px-4 py-2'}>Log Out</button>
-        </div>
-      </div>
+      <HeaderBar/>
 
       <div className={'container mx-auto'}>
         <div className={'font-extrabold text-4xl py-6 mt-2'}>
