@@ -119,6 +119,15 @@ div {
   height: 38px;
   border: 1px solid #E0E2E9;
   padding: 6px;
+  fill: "#ADB0CD";
+}
+
+.input-box:focus-within {
+  position: relative;
+  width: 100%;
+  height: 38px;
+  border: 1px solid #000000;
+  padding: 6px;
 }
 
 .input-box input {
@@ -143,6 +152,18 @@ div {
 .input-box svg { 
   position: absolute;
   top: 12px;
+}
+
+.input-box:focus-within .username { 
+  position: absolute;
+  top: 12px;
+  fill: black;
+}
+
+.input-box:focus-within .password { 
+  position: absolute;
+  top: 12px;
+  stroke: black;
 }
 
 .submit-button {
