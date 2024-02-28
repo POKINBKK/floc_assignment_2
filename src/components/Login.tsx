@@ -1,12 +1,29 @@
 import React, { useState } from 'react';
 import '../App.css';
+import { useDispatch, useSelector } from 'react-redux';
+import { setIsLogin, setIsShowLoginPopup } from '../state/job/JobSlice';
+import { RootState } from '../state/store';
+import { useNavigate } from 'react-router-dom';
 
 function Login() {
 
+  const dispatch = useDispatch();
+  const isJobSelected = useSelector((state: RootState) => state.job.isJobSelected);
+  const navigate = useNavigate();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+
   const checkUsernamePassword = () => {
-    console.log(username, password);
+    if(username === 'floc' && password === 'Thi$isTest1ng.'){
+      //Close pop up
+      //Set login state to 'TRUE'
+      //Navigate to detail page if user click on Job Box and Login
+      dispatch(setIsShowLoginPopup(false));
+      dispatch(setIsLogin(true));
+      if(isJobSelected){
+        navigate('/detail');
+      }
+    }
   }
   return (
     <div className={'login-body'}>

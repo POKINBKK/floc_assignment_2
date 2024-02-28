@@ -1,4 +1,4 @@
-interface JobItem {
+export interface JobItem {
     jobName: string;
     jobDetail: string;
     image: string;
