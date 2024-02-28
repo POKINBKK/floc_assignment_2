@@ -14,6 +14,13 @@
 .login-button {
   color:#34A853;
   border-color:#34A853;
+  transition: 0.3s;
+}
+
+.login-button:hover {
+  color:white;
+  border-color:#34A853;
+  background-color:#34A853;
   ;
 }
 
@@ -31,6 +38,17 @@
   border-radius: 16px;
   box-shadow: 4px 4px;
   min-height: 280px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.item-box:hover {
+  background: #E7DFD3;
+  border: 1px solid;
+  border-radius: 16px;
+  box-shadow: 4px 4px;
+  min-height: 280px;
+  cursor: pointer;
 }
 
 .item-image {
@@ -64,6 +82,15 @@ div {
   background-color: #262626;
   width: fit-content;
   margin-left: auto;
+  transition: 0.3s;
+}
+
+.back-button:hover {
+  color: white;
+  border-color:#656565;
+  background-color: #656565;
+  width: fit-content;
+  margin-left: auto;
 }
 
 .login-body {
@@ -87,16 +114,40 @@ div {
 }
 
 .input-box {
+  position: relative;
   width: 100%;
   height: 38px;
   border: 1px solid #E0E2E9;
   padding: 6px;
 }
 
+.input-box input {
+  border:none;
+  background-color:#fff;
+  display:block;
+  width: 100%;
+  box-sizing: border-box;
+  text-indent: 24px;
+}
+
+.input-box input:focus {
+  border:none;
+  background-color:#fff;
+  display:block;
+  width: 100%;
+  box-sizing: border-box;
+  text-indent: 24px;
+  outline: none;
+}
+
+.input-box svg { 
+  position: absolute;
+  top: 12px;
+}
+
 .submit-button {
   width: 100%;
   height: 38px;
-  padding: 6px;
   background-color: #34A853;
   color: white;
 }
