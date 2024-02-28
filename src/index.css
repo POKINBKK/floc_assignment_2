@@ -4,6 +4,7 @@
 
 .body {
   background-color:#F6F3EE;
+  min-height: 100vh;
 }
 
 .header-bar {
@@ -39,6 +40,28 @@
   border-radius: 16px;
 }
 
+.job-detail-box {
+  background: white;
+  border: 1px solid;
+  border-radius: 16px;
+  box-shadow: 4px 4px;
+}
+
+.job-detail-image {
+  width: 100%;
+  max-height: 372px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
 div {
   white-space: pre-wrap;
+}
+
+.back-button {
+  color: white;
+  border-color:#262626;
+  background-color: #262626;
+  width: fit-content;
+  margin-left: auto;
 }

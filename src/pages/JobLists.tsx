@@ -40,7 +40,7 @@ function JobLists() {
       </div>
 
       <div className={'list-box container mx-auto'}>
-        <div className={'font-bold text-5xl py-6 mt-2 border-b'}>
+        <div className={'font-bold text-4xl py-6 mt-2 border-b'}>
           explore job
         </div>
         <div className={'grid grid-cols-12 gap-6 p-8'}>
