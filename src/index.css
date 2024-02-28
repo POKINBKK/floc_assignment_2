@@ -23,3 +23,22 @@
 .man-image {
   width: 346px;
 }
+
+.item-box {
+  background: white;
+  border: 1px solid;
+  border-radius: 16px;
+  box-shadow: 4px 4px;
+  min-height: 280px;
+}
+
+.item-image {
+  width: 100%;
+  height: 155px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+div {
+  white-space: pre-wrap;
+}
