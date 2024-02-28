@@ -3,6 +3,7 @@ import '../App.css';
 import ManBlue from '../assets/Shiny_Happy_Standing_Blue.png';
 import ManRed from '../assets/Shiny_Happy_Standing_Red.png';
 import JobItems from '../jobitems';
+import Login from './Login';
 
 function JobLists() {
   return (
@@ -63,6 +64,8 @@ function JobLists() {
           })}
         </div>
       </div>
+
+      <Login />
     </div>
   );
 }

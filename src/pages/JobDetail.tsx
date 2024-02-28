@@ -39,7 +39,6 @@ function JobDetail() {
             <button className={'px-4 py-2'}>back to job list</button>
           </div>
         </div>
-        
       </div>
     </div>
   );
