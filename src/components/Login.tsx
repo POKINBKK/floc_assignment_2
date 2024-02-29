@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../App.css';
 import { useDispatch, useSelector } from 'react-redux';
-import { setIsLogin, setIsShowLoginPopup } from '../state/job/JobSlice';
+import { clearJobItem, setIsJobSelected, setIsLogin, setIsShowLoginPopup } from '../state/job/JobSlice';
 import { RootState } from '../state/store';
 import { useNavigate } from 'react-router-dom';
 import { current } from '@reduxjs/toolkit';
@@ -29,7 +29,10 @@ function Login() {
   }
 
   const handleClosePopup = () => {
+    //close popup and clear job item selected
     dispatch(setIsShowLoginPopup(false));
+    dispatch(setIsJobSelected(false));
+    dispatch(clearJobItem());
   }
 
   return (
