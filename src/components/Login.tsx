@@ -5,6 +5,7 @@ import { setIsLogin, setIsShowLoginPopup } from '../state/job/JobSlice';
 import { RootState } from '../state/store';
 import { useNavigate } from 'react-router-dom';
 import { current } from '@reduxjs/toolkit';
+import ClickOutside from './ClickOutside';
 
 function Login() {
 
@@ -27,8 +28,13 @@ function Login() {
     }
   }
 
+  const handleClosePopup = () => {
+    dispatch(setIsShowLoginPopup(false));
+  }
+
   return (
     <div className={'login-body'}>
+      <ClickOutside onClick={handleClosePopup} className={'w-fit mx-auto'}>
       <div className={'login-box drop-shadow-lg'}>
         <div className={'text-4xl font-semibold mx-auto w-fit pt-16'}>Login</div>
         <div className={'px-12 pt-6'}>
@@ -49,6 +55,7 @@ function Login() {
           <button className={'submit-button rounded-md mt-4'} onClick={checkUsernamePassword}>Log In</button>
         </div>
       </div>
+      </ClickOutside>
     </div>
   );
 }

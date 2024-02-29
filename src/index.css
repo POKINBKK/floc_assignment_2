@@ -105,12 +105,24 @@ div {
 
 .login-box {
   background-color: white;
-  width: 503px;
+  width: 350px;
   height: 338px;
   z-index: 20;
   margin: auto;
   margin-top: 144px;
   border-radius: 14px;
+}
+
+@media screen and (min-width:640px) {
+  .login-box {
+    background-color: white;
+    width: 503px;
+    height: 338px;
+    z-index: 20;
+    margin: auto;
+    margin-top: 144px;
+    border-radius: 14px;
+  }
 }
 
 .input-box {

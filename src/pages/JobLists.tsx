@@ -37,14 +37,14 @@ function JobLists() {
     <div className={'body'}>
       <HeaderBar />
 
-      <div className={'header-image px-40 pt-40 pb-24'}>
+      <div className={'header-image xl:px-40 xl:pt-40 xl:pb-24 px-8 pt-12 pb-12'}>
         <div className={'flex'}>
           <div>
-            <div className={'font-semibold text-6xl'}>
+            <div className={'font-semibold md:text-6xl text-2xl'}>
               Find your flexible<br/>
               top talent
             </div>
-            <div className={'font-normal text-base pt-2'}>
+            <div className={'font-normal md:text-base text-xs pt-2'}>
               lorem ipsum dolor sit amet consectetur. Quis<br/>
               integer parturient senectus varius id. 
             </div>
@@ -60,7 +60,7 @@ function JobLists() {
         </div>
       </div>
 
-      <div className={'list-box container mx-auto'}>
+      <div className={'list-box container mx-auto px-8'}>
         <div className={'font-bold text-4xl py-6 mt-2 border-b'}>
           explore job
         </div>

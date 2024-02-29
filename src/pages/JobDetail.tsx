@@ -23,7 +23,7 @@ function JobDetail() {
     <div className={'body'}>
       <HeaderBar/>
 
-      <div className={'container mx-auto'}>
+      <div className={'container mx-auto px-8'}>
         <div className={'font-extrabold text-4xl py-6 mt-2'}>
           job details
         </div>
@@ -33,10 +33,10 @@ function JobDetail() {
             <div className={'p-4 grid grid-cols-2 gap-6 p-8'}>
               <img className={'job-detail-image col-span-1'} src={jobItem.image}  alt={'job img'} />
               <div className={'col-span-1'}>
-                <div className={'font-semibold text-5xl'}>
+                <div className={'font-semibold sm:text-5xl text-2xl'}>
                   {jobItem.jobName}
                 </div>
-                <div className={'text-3xl font-normal pt-4'}>
+                <div className={'sm:text-3xl text-base font-normal pt-4'}>
                   {jobItem.jobDetail}
                 </div>
               </div>
